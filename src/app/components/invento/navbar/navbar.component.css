@@ -1,0 +1,22 @@
+/*nav{
+  top:0;
+  background: rgb(167,110,172);
+  background: linear-gradient(13deg, rgba(167,110,172,1) 0%, rgba(102,19,127,1) 46%, rgba(37,0,61,1) 100%);
+  position: absolute;
+  width:90vw;
+  height: 100px;
+  margin:10px;
+  border-radius: 20px 20px 20px 20px; /*first top-left corner, second value applies to top-right, hird value applies to bottom-right corner, and fourth value applies to bottom-left corner*/
+  /*box-shadow: 5px 5px 4px #0a0a0a;
+  z-index: 100;
+  align-self: center;
+}*/
+
+nav{
+  background: rgba(4,22,40,1);  
+  width:90%;
+  height: 100px;
+  margin:10px;
+  border-radius: 20px 20px 20px 20px; /*first top-left corner, second value applies to top-right, hird value applies to bottom-right corner, and fourth value applies to bottom-left corner*/
+  box-shadow: 5px 5px 4px #0a0a0a;
+}

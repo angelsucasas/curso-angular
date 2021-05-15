@@ -1,0 +1,85 @@
+<head>
+    <meta charset="utf-8" />
+    <base href="./">
+</head>
+<body>        
+    <!--<div class="container page-size">
+        <app-navbar></app-navbar>
+        <mat-grid-list cols="2" rowHeight="100vh">
+            <mat-grid-tile>
+                <a routerLink="/API/v1" routerLinkActive="active"><button>cambio</button></a>
+                <a routerLink="" routerLinkActive="active"><button>volver</button></a>
+                <a routerLink="form" routerLinkActive="active"><button>formulario</button></a>
+                <app-home-page-top></app-home-page-top>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="orbitShine2">
+                    <div class="orbitShine1">
+                        <div class="MainPlanet">
+                            <div class="sizeForSpinning circleAnimation">
+                                <div style=" background-color: blue;width: 50px; font-size: xx-large;height: 50px; color:white">
+                                    <div>OP</div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </mat-grid-tile>
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+        </mat-grid-list>
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <router-outlet></router-outlet>
+            </div>            
+        </div>
+    </div>-->
+    <div id='stars' style="position:absolute;overflow-y: hidden; margin: 0 !important;padding:0 !important;"></div>
+    <div id='stars2' style="position:absolute;overflow-y: hidden; margin: 0 !important;padding:0 !important;"></div>
+    <div id='stars3' style="position:absolute;overflow-y: hidden; margin: 0 !important;padding:0 !important;"></div>
+    <div class="h-screen page-size">                
+        <div class="h-1/3 grid grid-cols-3">            
+            <app-home-page-top class="pl-10"></app-home-page-top>
+            <div class="col-span-2 pt-10">
+                <app-navbar></app-navbar>             
+            </div>                      
+        </div>
+        <div class="h-full grid grid-cols-3" style="margin: 0 !important;padding:0 !important;">            
+            <div class="m-10 h-4/6 rounded-md rounded-lg rounded-sm">
+                <div class="w-full h-full"style="background-size: 100% 100%;background-image: url('assets/CleanRocket.png');">                    
+                    <div align="center" class="h-2/3 pt-40 pr-5">
+                        <h3 class="pt-28">Actividad para el Curso</h3>
+                        <h3>de Angular SPA</h3>
+                        <h3>fecha:14-05-2021</h3>
+                        <div class="grid grid-cols-2">
+                            <div align="right" class="pr-1">
+                                <h3>
+                                    <a href="https://www.linkedin.com/in/%C3%A1ngel-alejandro-sucasas-goncalves-1829871b0/">
+                                        <button class="bg-yellow-100 rounded-lg">
+                                            LinkedIn
+                                        </button> 
+                                    </a>
+                                </h3>
+                            </div>
+                            <div align="left">
+                                <h3>
+                                    <a href="https://github.com/angelsucasas/">
+                                        <button class="bg-yellow-100 rounded-lg">
+                                            Github
+                                        </button> 
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>              
+            </div>
+            <div class="m-10 h-4/6 col-span-2 rounded-md rounded-lg rounded-sm overflow-y-scroll" style="background: linear-gradient(180deg, rgba(57,112,162,1) 0%, rgba(78,177,205,1) 25%, rgba(91,233,215,1) 75%, rgba(0,219,255,1) 100%);;">
+                <router-outlet class="h-4/6"></router-outlet>
+            </div>
+        </div>
+
+    </div>
+</body>
