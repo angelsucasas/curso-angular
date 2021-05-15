@@ -1,0 +1,54 @@
+<form [formGroup]="userDataForm" (ngSubmit)="onSubmit()">
+    <div align="center" class="pt-40">
+        <h1>Ejemplo simple de formulario</h1>
+        <div  class="grid grid-cols-6 rounded-lg w-3/4 m-4 bg-red-400">
+            <div>
+                <label for="name" class="">
+                    <h1>Name</h1>
+                </label>
+            </div>
+            <div class="col-span-5">
+                <input 
+                    placeholder="Introduzca su nombre" 
+                    class="w-full h-full rounded-lg" 
+                    type="text"
+                    formControlName="name"
+                >
+            </div>
+        </div>
+        <div class="grid grid-cols-6 rounded-lg w-3/4 m-4 bg-red-400">
+            <div>
+                <label for="apellido" class="">
+                    <h1>Apellido</h1>
+                </label>
+            </div>
+            <div class="col-span-5">
+                <input 
+                    placeholder="Introduzca su apellido" 
+                    class="w-full h-full rounded-lg" 
+                    type="text"
+                    formControlName="lastName"
+                >
+            </div>
+        </div>
+        <div class="grid grid-cols-6 rounded-lg w-3/4 m-4 bg-red-400">
+            <div>
+                <label for="correo" class="">
+                    <h1>Correo</h1>
+                </label>
+            </div>        
+            <input 
+                placeholder="Introduzca su correo" 
+                class="col-span-5 w-full h-full rounded-lg" 
+                type="text"
+                formControlName="email"
+            >
+        </div>
+        <div align="center" >
+            <button class="bg-red-300 rounded-lg h-10 w-40" type="submit">
+                enviar
+            </button>
+        </div>
+        <h2 *ngIf="showMessageFlag==1">Output en consola! Presione F12 y luego dirijase a la pestaña de consola</h2>
+    </div>    
+</form>

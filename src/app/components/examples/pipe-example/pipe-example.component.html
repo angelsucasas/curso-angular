@@ -1,0 +1,9 @@
+<input type="numeric" #testInput>
+<button (click)="pipeExmaple(testInput.value)">click</button>
+<div id="result" style="background-color: gray;">{{testInput.value| uppercase}}</div>
+<br>
+<div id="result2" style="background-color: gray;">{{testInput.value| lowercase}}</div>
+<div id="result2" style="background-color: gray;">{{testInput.value| PipeEx}}</div>
+<br>
+<p>The hero's birthday is {{ birthday | date:format }}</p>
+<button (click)="toggleFormat2()">Toggle Format</button>
